@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: orange;
+        }
+
+        .participantdiv{
+            background-color: white;
+            height: 70vh;
+            width: 30vw;
+            border-radius: 5px;
+            margin: 5vh auto 0 auto;
+            /* overflow-y: scroll; */
+            padding: 10px;
+            min-width: 400px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        h1{
+           margin-top: 20px;
+           text-align: center; 
+        }
+
+        h3{
+            text-align: center;
+        }
+
+        #questiondivision{
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        hr{
+            height: 1px;
+            border: none;
+            background-color: gray;
+            margin: 10px 0;
+        }
+
+        .options{
+            border: 1px solid black;
+            height: 30px;
+            margin: 25px 28px;
+            width: 340px;
+            background: linear-gradient(to right, rgb(74, 218, 74) 50%, white 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all 2s ease-out;
+            border-radius: 5px;
+            max-width: 340px;
+        }
+
+        .options p{
+            margin-top: 4px;
+            margin-left: 10px;
+        }
+
+        #option1{
+            margin-top: 30px;
+        }
+
+        .options:hover{
+            background-position: left bottom;
+        }
+
+        #nextparticipant{
+            padding: 8px;
+            width: 150px;
+            float: right;
+            margin-right: 20px;
+            margin-top: 30px;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #submitparticipant{
+            display: none;
+            padding: 8px;
+            width: 150px;
+            margin-top: 30px;
+            margin-left: 150px;
+            background-color: greenyellow;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Hello, <br> All the best for the test.</h1>
+    <div class="participantdiv">
+        <h3>Question <span id="questionNo">1</span></h3>
+        <p id="questiondivision">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ipsum dignissimos, excepturi animi reiciendis odit, a magni ea quaerat rem quas modi perferendis.
+        </p>
+        <hr>
+
+        <div id="option1" class="options">
+            <p
+            id="op1">Option1</p>
+        </div>
+        <div id="option2" class="options">
+            <p
+            id="op2">Option1</p>
+        </div>
+        <div id="option3" class="options">
+            <p
+            id="op3">Option1</p>
+        </div>
+        <div id="option4" class="options">
+            <p
+            id="op4">Option1</p>
+        </div>
+
+        <button id="nextparticipant">Next Question</button>
+
+        <button id="submitparticipant">Submit</button>
+
+    </div>
+
+</body>
+</html>

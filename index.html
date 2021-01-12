@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background-color: rgb(180, 23, 54);
+    }
+
+    .card{
+        /* border: 1px solid white; */
+        width: 28vw;
+        height: 70vh;
+        margin: 10vh auto 0 auto;
+        min-width: 400px;
+        border-radius: 5px;
+        background-color: white;
+        padding: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    input{
+        border: none;
+        outline: none;
+        border-bottom: 1px solid black;
+    }
+
+    .formdiv{
+        display: flex;
+        margin: 12vh 6vw 0 6vw;
+        /* border: 2px solid black; */
+    }
+
+    .labeldiv{
+        width: 30%;
+    }
+
+    .inputdiv{
+        width: 60%;
+    }
+
+    .inputdiv input{
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+
+    .labeldiv div{
+        margin-bottom: 43px;
+    }
+
+    .radioDiv{
+        margin: 0 8vw;
+    }
+
+    #participant{
+        margin-left: 2vw;
+    }
+
+    #submit{
+        padding: 8px;
+        width: 150px;
+        margin: 40px 130px;
+        cursor: pointer;
+    }
+
+    #submit:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Welcome to PS Quiz!!</h1>
+    <div class="card">
+        <div class="formdiv">
+            <div class="labeldiv">
+                <div>Name:</div>
+                <div>Email:</div>
+                <div>Password:</div>
+            </div>
+            
+            <div class="inputdiv">
+                <input type="text" placeholder="Enter your name" id="name"><br>
+                <input type="text" placeholder="Email" id="email"><br>
+                <input type="text" placeholder="Enter your name" id="password">
+            </div>
+        </div>
+        
+        <div class="radioDiv">
+            <input type="radio" name="quiztype" id="admin">
+            <label for="admin">Admin</label> 
+            <input type="radio" name="quiztype" id="participant">
+            <label for="admin">Participant</label>
+        </div>
+        <button id="submit">Submit</button>
+    </div>
+
+    <script src="app2.js"></script>
+</body>
+</html>

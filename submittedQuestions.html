@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background-color: slateblue;
+    }
+
+    .submittedQues{
+        background-color: white;
+            height: 70vh;
+            width: 30vw;
+            border-radius: 5px;
+            margin: 5vh auto 0 auto;
+            overflow-y: scroll;
+            padding: 10px;
+            min-width: 400px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .submittedQues::-webkit-scrollbar{
+            width: 0px;
+            background: transparent;
+    }
+
+    #quesDIV{
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    #finalAdminSubmit{
+        padding: 8px;
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 20px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(24, 187, 19);
+        outline: none;
+        cursor: pointer;
+    }
+
+    .opt{
+        margin: 5px 10px;
+        font-size: 20px;
+        color: white;
+        width: 30px;
+        text-align: center;
+        padding: 5px;
+    }
+
+</style>
+<body>
+    <div class="submittedQues">
+        <div id="quesDDIV">
+            <!-- <div id="quesDIV">
+                <p class="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio consequuntur alias optio quidem quia reiciendis facilis temporibus harum dolorem natus qui doloremque similique, dicta blanditiis unde provident hic molestias consequatur.</p>
+    
+                <p class="opt1">option1</p>
+                <p class="opt2">option2</p>
+                <p class="opt3">option3</p>
+                <p class="opt4">option4</p>
+            </div> -->
+            
+        </div>
+        <button id="finalAdminSubmit">Submit</button>
+    </div>
+    <script src="app1.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width
+    , initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: tomato;
+        }
+
+        .adminQuestions{
+            background-color: white;
+            height: 70vh;
+            width: 30vw;
+            border-radius: 5px;
+            margin: 5vh auto 0 auto;
+            overflow-y: scroll;
+            padding: 10px;
+            min-width: 400px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .adminQuestions::-webkit-scrollbar{
+            width: 0px;
+            background: transparent;
+        }
+
+        h1{
+            text-align: center;
+            margin: 20px;
+        }
+
+        #ques{
+            margin-left: 5%;
+        }
+
+        label{
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        #questions{
+            margin-top: 20px;
+            width: 80%;
+            border: none;
+            border-bottom: 1px solid black;
+            margin-left: 30px;
+            text-align: center;
+            font-size: 20px;
+            outline: none;
+            margin-bottom: 20px;
+        }
+
+        #quizName{
+            margin-top: 20px;
+            width: 80%;
+            border: none;
+            border-bottom: 1px solid black;
+            /* margin-left: 100px; */
+            text-align: center;
+            font-size: 15px;
+            outline: none;
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        #passkey{
+            margin-top: 20px;
+            width: 80%;
+            border: none;
+            border-bottom: 1px solid black;
+            /* margin-left: 200px; */
+            text-align: center;
+            font-size: 15px;
+            outline: none;
+            margin-left: 30px;
+        }
+
+        p{
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+
+        #q{
+            margin-left: 20px;
+        }
+
+        #question{
+            margin: 8px 0px 10px 20px;
+        }
+
+        label{
+            margin-left: 20px;
+        }
+
+        .option{
+            width: 110px;
+            margin-left: 10px;
+            border: none;
+            border-bottom: 1px solid black;
+            text-align: center;
+            margin-top: 20px;
+            outline: none;
+            font-size: 20px;
+        }
+
+        #correct{
+            font-size: 22px;
+            margin-top: 25px;
+        }
+
+        #nextQuestionByAdmin{
+            width: 200px;
+            padding: 8px;
+            outline: none;
+            cursor: pointer;
+            height: 40px;
+        }
+
+        #submitAndShare{
+            padding: 8px;
+            width: 180px;
+            background-color: rgb(24, 187, 19);
+            font-weight: bold;
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+            height: 40px;
+            margin-right: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>QUIZ POOL</h1>
+    <div class="adminQuestions">
+        <label for="questions" id="ques">Number of questions you want to give in quiz?</label><br>
+        <input type="text" name="ques" id="questions" placeholder="0">
+        <br>
+        <label for="questions" id="ques">Please give the name of the Quiz</label><br>
+        <input type="text" name="ques" id="quizName" placeholder="Quiz Name">
+        <br>
+        <label for="questions" id="ques">Please provide the password key for the Quiz</label><br>
+        <input type="text" name="ques" id="passkey" placeholder="Pass Key">
+
+        <p>Please provide mcqs along with correct answer</p>
+
+        <div class="questionPool">
+            <label for="quest" id="q">Question :</label>
+        <br>
+        <textarea name="quest" id="question" cols="48" rows="3"></textarea>
+        <br>
+
+        <label for="o1">Option 1 </label>
+        <input type="text" name="o1" id="option1" placeholder="option1" class="option"><br>
+
+        <label for="o2">Option 2 </label>
+        <input type="text" name="o2" id="option2" placeholder="option2" class="option"><br>
+
+        <label for="o3">Option 3 </label>
+        <input type="text" name="o3" id="option3" placeholder="option3" class="option"><br>
+
+        <label for="o4">Option 4 </label>
+        <input type="text" name="o4" id="option4" placeholder="option4" class="option">
+        <br>
+        <label for="correct">Correct Option</label>
+        <input type="text" name="correct" id="correct" placeholder="a / b / c / d" class="option">
+        </div>
+
+        <div style="display: flex; width: 100%;  height: 40px; margin-top: 30px;">
+            <button disabled id="submitAndShare">Submit</button>
+            <button id="nextQuestionByAdmin">Next Question →</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
