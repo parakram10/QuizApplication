@@ -38,6 +38,7 @@
         #questiondivision{
             margin-top: 10px;
             padding: 10px;
+            text-align: center;
         }
 
         hr{
@@ -50,14 +51,10 @@
         .options{
             border: 1px solid black;
             height: 30px;
-            margin: 25px 28px;
-            width: 340px;
-            background: linear-gradient(to right, rgb(74, 218, 74) 50%, white 50%);
-            background-size: 200% 100%;
-            background-position: right bottom;
-            transition: all 2s ease-out;
+            margin: 25px 5%;
+            width: 87%;
             border-radius: 5px;
-            max-width: 340px;
+            min-width: 340px;
         }
 
         .options p{
@@ -69,15 +66,10 @@
             margin-top: 30px;
         }
 
-        .options:hover{
-            background-position: left bottom;
-        }
-
         #nextparticipant{
             padding: 8px;
-            width: 150px;
-            float: right;
-            margin-right: 20px;
+            width: 90%;
+            margin-left: 20px;
             margin-top: 30px;
             outline: none;
             border-radius: 5px;
@@ -85,11 +77,11 @@
         }
 
         #submitparticipant{
-            display: none;
+            /* display: none; */
             padding: 8px;
-            width: 150px;
+            width: 90%;
             margin-top: 30px;
-            margin-left: 150px;
+            margin-left: 20px;
             background-color: greenyellow;
             outline: none;
             border-radius: 5px;
@@ -107,28 +99,32 @@
         </p>
         <hr>
 
-        <div id="option1" class="options">
+       <div id="ansDiv">
+        <div id="option1" class="options a">
             <p
             id="op1">Option1</p>
         </div>
-        <div id="option2" class="options">
+        <div id="option2" class="options b">
             <p
             id="op2">Option1</p>
         </div>
-        <div id="option3" class="options">
+        <div id="option3" class="options c">
             <p
             id="op3">Option1</p>
         </div>
-        <div id="option4" class="options">
+        <div id="option4" class="options d">
             <p
             id="op4">Option1</p>
         </div>
+       </div>
 
         <button id="nextparticipant">Next Question</button>
 
         <button id="submitparticipant">Submit</button>
 
     </div>
+
+    <script src="app4.js"></script>
 
 </body>
 </html>
